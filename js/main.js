@@ -1,6 +1,6 @@
-function vatCalculator(exclusivePrice, taxRate) {
-    inclusivePrice = exclusivePrice + (exclusivePrice * (taxRate / 100))
-    return inclusivePrice
+function vatCalculator(vatExclusivePrice, taxRate) {
+    vatInclusivePrice = vatExclusivePrice + (vatExclusivePrice * (taxRate / 100))
+    return vatInclusivePrice
 }
 
-console.log(vatCalculator(30, 16))
+console.log(vatCalculator(30, 10))
